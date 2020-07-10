@@ -1,4 +1,5 @@
 # Your code here
+import os
 
 
 
@@ -7,6 +8,10 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+
+    cache = {}
+    
+    for thing in files:
 
     return result
 
