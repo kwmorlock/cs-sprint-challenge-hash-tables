@@ -4,6 +4,10 @@ def intersection(arrays):
     """
     # Your code here
 
+    cache = {}
+
+    for thing in arrays:
+
     return result
 
 
