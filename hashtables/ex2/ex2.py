@@ -11,4 +11,18 @@ def reconstruct_trip(tickets, length):
     """
     # Your code here
 
+    cache = {}
+    route = [None] * length
+
+    for thing in tickets:
+        cache[thing.source] = thing.destination
+
+    destination = cache['NONE']
+
+    for flying in range(length):
+        
+        route[flying] = destination
+
+        destination = cache[destination]
+
     return route
