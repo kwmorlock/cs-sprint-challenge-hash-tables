@@ -9,11 +9,13 @@ def has_negatives(a):
     result = []
 
     for thing in a:
-        if thing != 0:
-            cache[thing] = 1
+        if thing != 0: #dont want to include 0
+            cache[thing] = 1 #adding the number to the cache
 
-            if -thing in cache:
-                result.append(abs(thing))
+            if -thing in cache: #if the number has both
+                result.append(abs(thing)) #add the number to result []
+                #The abs() takes only one argument, a number whose absolute value is to be returned.
+                #The append() method adds a single item to the end of the list.
 
     return result
 
